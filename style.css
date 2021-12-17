@@ -1,0 +1,210 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-color 	: grey;
+	text-align			: center;
+	font-family			: Verdana, Tahoma, Helvetica;
+	font-size			: 12px;
+}
+
+
+
+/* pengaturan layout utama */
+#layout {
+	background			: #A52A2A;
+	width 				: 980px;
+	margin				: auto;
+	text-align 			: left;
+	padding 			: 2px;
+}
+.judul img{
+	width: 980px;
+	height: 150px;
+
+}
+.judul h1 {
+	position: absolute;
+	font-size: 50px;
+	margin-left: 320px;
+	margin-top: 35px;
+	
+	color: #A52A2A;
+
+}
+#runningtext{
+	width 				: 100%;
+	height				: 25px;
+	padding-top  		: 7px;
+	margin				: 5px 0 5px 0;
+	background-color 	: #808080;
+	color				: white;
+	position			: relative;
+}
+
+
+
+#sidebar{
+	padding 			: 5px;
+	width				: 27%;
+	background-color	: #FFFAF0;
+	position 			: relative;
+	float				: right;
+	
+}
+.About{
+	background:  #B22222;
+	padding 			: 5px 10px 5px 10px;
+	margin 				: 0px 0px 0px 0px;
+	text-align			: center;
+	color				: green;
+	
+	font-size			: 15px;
+	margin-bottom		: 5px;
+
+}
+.profil{
+	padding 			: 5px 10px 5px 10px;
+	margin 				: 0px 0px 0px 0px;
+	text-align			: center;
+	color				: green;
+	
+	font-size			: 15px;
+	margin-bottom		: 5px;
+
+}
+/*pengaturan widget sidebar*/
+.widged{
+	width				: 99%;
+	background-bottom	: 5px;
+	background 			: #FFFAF0;
+	border-top 			: 1px solid #DFDFDF;
+	border-bottom		: 1px solid #DFDFDF;
+	border-right  		: 1px solid #DFDFDF;
+	border-left			: 1px solid #DFDFDF;
+	font-size			: 100%;
+	margin 				: 0px 0px 5px 0px;
+}
+
+.foto{
+	width 				: 100%;
+	height				: 159px;
+}
+	.judulwidged{
+	background:  #B22222;
+	padding 			: 5px 10px 5px 10px;
+	margin 				: 0px 0px 0px 0px;
+	text-align			: center;
+	color				: green;
+	
+	font-size			: 15px;
+	margin-bottom		: 5px;
+}
+.widged ul {
+	margin 				: 0px 0px 0px 0px;
+	padding 			: 0px 0px 0px 0px;
+	list-style-type		: none;
+}
+.widged li {
+	padding 			: 0px 0px 0px 0px; 		/
+	background-position	: left;
+	background-repeat	: no-repeat;
+	color				: #333333;
+}
+.widged li a {
+	color 				: #333333;
+	border-bottom		: 1px dotted #cccccc;
+	text-decoration		: none;
+	display  			: block;
+	margin-bottom		: 5px;
+	padding 			: 4px 5px 3px 10px;
+}
+.widged li a:hover {
+	color 				: green;
+}
+.sosial{
+	background:  #B22222;
+	padding 			: 5px 10px 5px 10px;
+	margin 				: 0px 0px 0px 0px;
+	text-align			: center;
+	color				: green;
+	
+	font-size			: 15px;
+	margin-bottom		: 5px;
+}
+.buku{
+	background:  #B22222;
+	padding 			: 5px 10px 5px 10px;
+	margin 				: 0px 0px 0px 0px;
+	text-align			: center;
+	color				: green;
+	
+	font-size			: 15px;
+	margin-bottom		: 5px;
+}
+.perpus{
+	padding 			: 0px 0px 0px 0px; 		/
+	background-position	: left;
+	background-repeat	: no-repeat;
+	color				: #333333;
+}
+
+/*pengaturan isi*/
+#isi{
+	padding 			: 5px;
+	width				: 70%;
+	height				: auto;
+	background-color 	: #FFF8DC;
+	position 			: relative;
+	margin-top			: 10px;
+}
+/*pengaturan posting*/
+.isiposting{
+	background-color	: #E9967A;
+	width				: 100%;
+	height				: 150px;
+	margin-bottom		: 2px;
+	padding				: 2px;
+}
+/*pengaturan gambar yang di halaman depan*/
+.gambardepan{
+	float				: left;
+	height				: 140px;
+	width 				: 150px;
+	margin-right		: 5px;
+	margin-top 			: 3px;
+	padding 			: 1px;
+	border 				: 1px solid #008000;
+}
+.isiposting h2 {
+	font-size			: 20px;
+	font-weight `		: bold;
+	color 				: #ffffff;
+	margin-top			: 4px;
+	margin-bottom		: 3px;
+}
+/*pengaturan anchor atau link yang ada di isiposting */
+.isiposting a{
+	text-decoration		: none;
+}
+.isiposting a:hover{
+	color				: yellow;
+}
+
+
+#footer{
+	width 				: 100%;
+	height				: 50px;
+	margin-top			: 5px;
+	padding-top			: 30;
+	background-color	: #49494e;
+	color				: white;
+	font-size			: 12pt;
+	text-align			: center;
+	position			: relative;
+	clear				: both;
+}
+
+
+

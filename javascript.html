@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATA PADA PERPUSTAKAAN </title>
+</head>
+<body>
+<script>
+
+function arr(u,v,w,x,y,z){
+this.nama = u;
+this.KodeAnggota = v;
+this.alamat = w;
+this.tlp = x;
+this.jumlahPinjam = y;
+this.biaya = z;
+}
+
+function arr2(u,v,w,x,y){
+this.judul = u;
+this.KodeBuku = v;
+this.harga = w;
+this.penulis = x;
+this.penerbit = y;
+}
+
+var sensus = new arr([],[],[],[],[],[])
+var sensus2 = new arr2([],[],[],[],[]) 
+
+
+
+alert("Selamat datang di perpustakaan unismuh makassar 😀")
+lagi = true;
+while(lagi){
+	alert("INPUT ANGGOTA 👨‍👨‍👧‍👦")
+	input =prompt("Masukkan Nama ")
+	input2 =prompt("Masukkan Kode Anggota")
+	input3 = prompt("Masukkan Alamat")
+	input4 = prompt("Masukkan no. Tlp anda")
+	input5 = prompt("Berapa Buku yang Ada Pinjam")
+	input6 = prompt("Masukkan Harga Buku");
+	if(sensus.nama.length == 0&&sensus.KodeAnggota.length ==0&&sensus.alamat.length==0&&sensus.tlp.length == 0&&sensus.jumlahPinjam.length ==0&&sensus.biaya.length==0){
+		sensus.nama.push(input)
+		sensus.KodeAnggota.push(input2)
+		sensus.alamat.push(input3)
+		sensus.tlp.push(input4)
+		sensus.jumlahPinjam.push(input5)
+		sensus.biaya.push(input6)
+	}
+	else
+	{
+		sensus.nama.push(input)
+		sensus.KodeAnggota.push(input2)
+		sensus.alamat.push(input3)
+		sensus.tlp.push(input4)
+		sensus.jumlahPinjam.push(input5)
+		sensus.biaya.push(input6)
+	}
+
+
+
+
+			while(lagi){
+				alert("INPUT BUKU")
+				input =prompt("Masukkan Judul Buku")
+				inputA =prompt("Masukkan Kode Buku")
+				inputB = prompt("Berapa Harga Buku ?")
+				inputC = prompt("Masukkan Nama Penulis Buku")
+				inputD = prompt("Masukkan Nama Penerbit Buku")
+				if(sensus2.judul.length == 0&&sensus2.KodeBuku.length ==0&&sensus2.harga.length == 0&&sensus2.penulis.length ==0&&sensus2.penerbit.length==0){
+					sensus2.judul.push(input)
+					sensus2.KodeBuku.push(inputA)
+					sensus2.harga.push(inputB)
+					sensus2.penulis.push(inputC)
+					sensus2.penerbit.push(inputD)
+				}
+				else
+				{ 
+					sensus2.judul.push(input)
+					sensus2.KodeBuku.push(inputA)
+					sensus2.harga.push(inputB)
+					sensus2.penulis.push(inputC)
+					sensus2.penerbit.push(inputD)
+				}
+				
+				lagi = confirm("ingin menambah buku ?")
+			}
+
+
+
+
+	lagi = confirm("ingin mengulagi inputan peminjam ?")
+}
+var hapus = confirm("Ingin mengurangi buku?")
+if (hapus == true)
+{
+	alert("Jumlah buku yang kamu input adalah :\n"+sensus2.judul.length)
+	var jumlahHapus = prompt("Masukkan jumlah buku yang akan dikurangi :")
+	if (jumlahHapus==true&&sensus2.judul.length!==0)
+	{
+		var buang = sensus2.judul.splice(0,jumlahHapus)
+		alert("buku yang dihapus :\n"+buang)
+		alert("Terima kasih 🤗")
+	}
+	else
+	{
+		alert("tidak ada buku yang dikurangi")
+		alert("Terima kasih 😀")
+	}
+}
+else
+{
+	alert("Terima kasih 😊")
+}
+
+document.write("<br> <b>ANGGOTA</b>");
+document.write("<br>Nama : "+sensus.nama.join(' , '))
+document.write("<br> Kode Anggota: "+sensus.KodeAnggota.join(' , '))
+document.write("<br> Alamat : "+sensus.alamat.join(' , '))
+document.write("<br> Nomor Telepon : "+sensus.tlp.join(' , '))
+document.write("<br> Jumlah Buku yang Dipinjam : "+sensus.jumlahPinjam.join(' , '))
+document.write("<br> Biaya : "+sensus.biaya.join(' , '))
+
+document.write("<br>")
+document.write("<br>")
+document.write("<br>")
+
+document.write("<br> <b>BUKU</b>");
+document.write("<br>judul Buku :"+sensus2.judul.join(' , '))
+document.write("<br>Kode Buku :"+sensus2.KodeBuku.join(' , '))
+document.write("<br>Harga Buku :"+sensus2.harga.join(' , '))
+document.write("<br> Nama Penulis :"+sensus2.penulis.join(' , '))
+document.write("<br> Nama Penerbit :"+sensus2.penerbit.join(' , '))
+
+
+
+</script>
+</body>
+</html>
